@@ -110,7 +110,7 @@ void TradeShow::addExhibit(int exhibitID)
 
 void TradeShow::deleteExhibit(int exhibitID)
 {
-    vector<int> exhibits = this->speakerID;
+    vector<int> exhibits = this->exhibitID;
     for(int i = 0; i < exhibits.size(); i++)
     {
         if(exhibits.at(i) == exhibitID)
