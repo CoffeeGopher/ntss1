@@ -4,6 +4,7 @@
 
 #include <cstdlib>
 #include <iostream>
+#include <vector>
 
 using namespace std;
 
@@ -16,20 +17,20 @@ class TradeShow
         // Constructors
 
         TradeShow(int ts_id);
-        TradeShow(int ts_id, string name, string date, int num_seats);
+        TradeShow(int ts_id, string ts_name, string ts_date, int num_seats);
 
         // Accessors
 
         int getID() const;
-        int getName() const;
-        int getDate() const;
+        string getName() const;
+        string getDate() const;
         int getAvailableSeats() const;
 
         // Mutators
 
-        void setName(string name);
+        void setName(string ts_name);
         void setHost(int hostID);
-        void setDate(string date);
+        void setDate(string ts_date);
         void addSpeaker(int speakerID);
         void deleteSpeaker(int speakerID);
         void addExhibit(int exhibitID);
@@ -41,6 +42,8 @@ class TradeShow
         string date;
         int numSeats;
         int hostID;
+        vector<int> speakerID;
+        vector<int> exhibitID;
 };
 
 #endif //TRADESHOW_H
