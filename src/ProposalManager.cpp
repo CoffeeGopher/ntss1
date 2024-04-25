@@ -31,9 +31,9 @@ int ProposalManager::generate_unique_proposal_id() {
     return gen();
 }
 
-Proposal* ProposalManager::create_proposal(int speaker_id, string proposal_subject, string proposal_description, time_t planned_datetime) {
+Proposal* ProposalManager::create_proposal(int speaker_id, string subject, string description, time_t planned_datetime) {
     Proposal* proposal = new Proposal(
-        generate_unique_proposal_id(), speaker_id, proposal_subject, proposal_description, planned_datetime
+        generate_unique_proposal_id(), speaker_id, subject, description, planned_datetime
     );
     proposal_map[speaker_id] = proposal;
     return proposal;
@@ -45,3 +45,5 @@ Proposal* ProposalManager::get_proposal(int proposal_id) {
     }
     return nullptr;
 }
+
+// Ticket Manager

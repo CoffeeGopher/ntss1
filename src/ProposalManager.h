@@ -13,12 +13,11 @@ class ProposalManager {
 public:
     Proposal* create_proposal(
         int speaker_id,
-        string proposal_subject,
-        string proposal_description,
+        string subject,
+        string description,
         time_t planned_datetime
     );
     Proposal* get_proposal(int proposal_id);
-
 
     static ProposalManager* GetInstance();
 
