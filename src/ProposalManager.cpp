@@ -45,5 +45,3 @@ Proposal* ProposalManager::get_proposal(int proposal_id) {
     }
     return nullptr;
 }
-
-// Ticket Manager

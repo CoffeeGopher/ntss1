@@ -14,6 +14,7 @@ using namespace std;
 int main() {
     cout << boolalpha; // not sure why this is here?
 
+    cout << endl;
 
     // proposal test code
 
@@ -50,6 +51,15 @@ int main() {
     
     cout << endl;
 
+    // ticket test code
+
+    cout << "Let's create a ticket and access its attributes" << endl;
+
+    Ticket ticket = createTicket(0, 0, "Hello!", "World!");
+
+    cout << "Ticket name, body: " << ticket.getTitle() << ", " << ticket.getBody() << endl;
+
+    submitTicket(ticket); // crazy
 
     return EXIT_SUCCESS;
 }
