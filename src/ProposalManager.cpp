@@ -1,3 +1,7 @@
+// CS 356 Spring 2024 - Proposal Manager cpp file
+// Brennan Duffy
+// Last Modified: 25 April 2024
+
 #include "ProposalManager.h"
 #include <map>
 #include <random>
@@ -20,7 +24,7 @@ int ProposalManager::generate_unique_proposal_id() {
     // generation system that prevents duplicate IDs
 
     // this is not a real implementation
-    
+
     std::random_device rd;
     std::mt19937 gen(rd());
 
