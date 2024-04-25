@@ -16,6 +16,9 @@ int main() {
 
 
     // proposal test code
+
+    cout << "We can create and access proposals using the manager" << endl;
+
     ProposalManager* proposal_manager = ProposalManager::GetInstance();
     Proposal* prop1 = proposal_manager->create_proposal(
         1,
@@ -23,6 +26,9 @@ int main() {
         "this talk goes over the intricacies of petting feline companions",
         std::time(nullptr) // dummy value
     );
+
+    cout << "Prop1 subject: " << prop1->subject << endl;
+
     Proposal* prop2 = proposal_manager->create_proposal(
         82,
         "101 parrots and where to find them",
@@ -30,8 +36,16 @@ int main() {
         std::time(nullptr) // dummy value
     );
 
+    cout << "Prop2 subject: " << prop2->subject << endl;
+
     int prop1_id = prop1->proposal_id;
+
+    cout << endl;
+
+    cout << "Prop1 id: " << prop1_id << endl;
+    cout << "proposal_manager->get_proposal(prop1_id)->subject: " << proposal_manager->get_proposal(prop1_id)->subject << endl;
     
+    cout << endl;
 
 
     return EXIT_SUCCESS;
