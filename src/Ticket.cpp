@@ -1,9 +1,10 @@
 // CS 356 Spring 2024 - Ticket class cpp file
 // Ambrose Sturgill <3
-// Last Modified: 21 April 2024
+// Last Modified: 23 April 2024
 
 #include <cstdlib>
 #include <iostream>
+#include <string>
 #include "Ticket.h"
 
 using namespace std;
