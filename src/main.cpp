@@ -43,7 +43,10 @@ int main() {
     cout << endl;
 
     cout << "Prop1 id: " << prop1_id << endl;
-    cout << "proposal_manager->get_proposal(prop1_id)->subject: " << proposal_manager->get_proposal(prop1_id)->subject << endl;
+
+    Proposal* gottenProp = proposal_manager->get_proposal(prop1_id);
+
+    cout << "proposal_manager->get_proposal(prop1_id)->subject: " << (gottenProp == nullptr ? "Not found" : gottenProp->subject) << endl;
     
     cout << endl;
 

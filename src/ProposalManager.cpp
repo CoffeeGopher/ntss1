@@ -35,7 +35,7 @@ Proposal* ProposalManager::create_proposal(int speaker_id, string subject, strin
     Proposal* proposal = new Proposal(
         generate_unique_proposal_id(), speaker_id, subject, description, planned_datetime
     );
-    proposal_map[speaker_id] = proposal;
+    proposal_map[proposal->proposal_id] = proposal;
     return proposal;
 }
 
