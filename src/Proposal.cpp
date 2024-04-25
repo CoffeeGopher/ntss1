@@ -1,3 +1,7 @@
+// CS 356 Spring 2024 - Proposal cpp file
+// Brennan Duffy
+// Last Modified: 25 April 2024
+
 #include "Proposal.h"
 #include <chrono>
 
