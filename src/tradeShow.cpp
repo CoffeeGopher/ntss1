@@ -1,6 +1,6 @@
 // CS 356 NTSS 1c
 // Alex Georgopoulos
-// Last Modified: April 23, 2024
+// Last Modified: April 25, 2024
 
 #include <cstdlib>
 #include <iostream>
@@ -16,7 +16,7 @@ TradeShow::TradeShow(int ts_id)
     tsID = ts_id;
     name = "My Trade Show";
     date = "";
-    numSeats = NULL;
+    numSeats = 0;
     hostID = 0;//User::getUserID(); // TODO implement User class
 }
 

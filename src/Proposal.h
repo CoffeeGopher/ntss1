@@ -1,13 +1,20 @@
+// CS 356 Spring 2024 - Proposal h file
+// Brennan Duffy
+// Last Modified: 25 April 2024
+
 #include <string>
 
 using namespace std;
 
+#ifndef PROPOSAL_H
+#define PROPOSAL_H
+
 class Proposal {
     friend class ProposalManager;
-    
+
 public:
     // an ideal implementation would see these protected with
-    // getter methods, but erm... oopsie! 
+    // getter methods, but erm... oopsie!
     int proposal_id; // generated on creation
     int speaker_id;
     string proposal_subject;
@@ -20,3 +27,5 @@ public:
 protected:
     Proposal(int proposal_id, int speaker_id, string proposal_subject, string proposal_description, time_t planned_datetime);
 };
+
+#endif /* PROPOSAL_H */
